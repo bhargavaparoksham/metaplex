@@ -31,12 +31,14 @@ const UserActions = () => {
             <Link to={`/art/create`}>
               <Button className="app-btn">Create</Button>
             </Link>
-          ) : null}
+           ) : null}
+          {canCreate ? (
           <Link to={`/auction/create/0`}>
             <Button className="connector" type="primary">
               Sell
             </Button>
           </Link>
+          ) : null}
         </>
       )}
     </>
